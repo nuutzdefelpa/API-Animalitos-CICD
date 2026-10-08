@@ -15,7 +15,7 @@ const formatRes = (data) => ({ statusCode: 200, data });
 // Endpoints 1-3: Habitats (GET, POST, DELETE)
 app.get('/api/habitats', (req, res) => {
     db.all("SELECT * FROM habitats", [], (err, rows) => {
-        console.log("Mensaje de prueba!!!");
+        console.log("prueba revisada!");
         res.json(formatRes(rows));
     });
 });app.post('/api/habitats', (req, res) => {
